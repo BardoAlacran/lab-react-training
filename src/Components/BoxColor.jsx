@@ -3,9 +3,12 @@ import PropTypes from 'prop-types';
 function BoxColor({r, g, b}){
     const style = {
         background: `rgb(${r},${g},${b})`,
+        textAlign: 'center',
     }
     return (
-        <p style={style}>rgb({r},{g},{b})</p>
+        <div className='border'style={style}>
+        <p>rgb({r},{g},{b})</p>
+        </div>
     )
 }
 

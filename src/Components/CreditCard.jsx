@@ -12,7 +12,7 @@ function CreditCard({type, number, expirationMonth, expirationYear, bank, owner,
     }
     
     return (
-        <div style={style} >
+        <div style={style} className='border'>
             <p>{type}</p>
             <p>{newNumber}</p>
             <p>{expirationMonth}</p>

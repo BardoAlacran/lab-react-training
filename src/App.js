@@ -12,6 +12,7 @@ import { cardArray, creditCardArray, driverCardArray } from './info';
 function App() {
   return (
     <div className="App">
+      <h1>IdCard</h1>
       {cardArray.map(card => {
         return <IdCard 
         key={card.id}
@@ -23,7 +24,7 @@ function App() {
         picture={card.picture}
         />
       })}
-
+      <h1>Greetings</h1>
       <Greetings lang='es'>
         Peter
       </Greetings>
@@ -33,13 +34,13 @@ function App() {
       <Greetings lang='de'> 
         Johan
       </Greetings>
-
+      <h1>Random</h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
+      <h1>BoxColor</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
+      <h1>CreditCard</h1>
       {creditCardArray.map(card => {
         return <CreditCard 
         key={card.id}
@@ -53,14 +54,14 @@ function App() {
         color={card.color}
         />
       })}
-
+      <h1>Rating</h1>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
+      <h1>DriverCard</h1>
       {driverCardArray.map(card => {
         return <DriverCard 
         key={card.id}

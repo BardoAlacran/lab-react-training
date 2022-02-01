@@ -3,25 +3,25 @@ import PropTypes from 'prop-types';
 function Greetings ({lang, children}){
     if (lang === 'es'){
         return (
-            <div>
+            <div className='border'>
                 Hola {children}
             </div>
         )
     } else if (lang === 'fr'){
         return (
-            <div>
+            <div className='border'>
                 Bonjour {children}
             </div>
         )
     } else if (lang === 'en'){
         return (
-            <div>
+            <div className='border'>
                 Hello {children}
             </div>
         )
     } else {
         return (
-            <div>
+            <div className='border'>
                 Hallo {children}
             </div>
         )

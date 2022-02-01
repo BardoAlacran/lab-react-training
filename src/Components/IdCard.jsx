@@ -2,13 +2,17 @@ import PropTypes from 'prop-types'
 
 function IdCard({lastName, firstName, gender, height, birth, picture}){
     return (
-        <div>
-            <h3><b>First Name: {firstName}</b></h3>
-            <h3><b>Last Name: {lastName}</b></h3>
-            <h3><b>Gender: {gender}</b></h3>
-            <h3><b>Height: {height}</b></h3>
-            <h3><b>Birth: {birth}</b></h3>
+        <div className='border IdCard'>
+            <article>
             <img src={picture} alt=''/>
+            </article>
+            <article>
+            <ul><b>First Name: {firstName}</b></ul>
+            <ul><b>Last Name: {lastName}</b></ul>
+            <ul><b>Gender: {gender}</b></ul>
+            <ul><b>Height: {height}</b></ul>
+            <ul><b>Birth: {birth}</b></ul>
+            </article>
         </div>
     )
 }

@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 function Random({min, max}){
     const random = Math.floor(Math.random()*(max-min))+min;
     return (
-        <p>{random}</p>
+        <div className='border'>
+        <p>Random value between {min} and {max} = {random}</p>
+        </div>
     )
 }
 
